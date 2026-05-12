@@ -1,135 +1,141 @@
-## Nordic Electricity Market Intelligence & Price Forecasting Platform
+# ⚡ Nordic Electricity Market Forecasting Platform
 
-An AI-driven electricity market analytics and forecasting platform built using real Finland day-ahead electricity pricing data from the ENTSO-E Transparency Platform. This project focuses on electricity market trend analysis, electricity price forecasting, volatility detection, and market intelligence using machine learning and time-series analytics.
+An AI-powered electricity market analytics platform built using real Finland electricity pricing data from the ENTSO-E Transparency Platform. This project focuses on electricity price forecasting, market volatility analysis, and time-series energy analytics using machine learning.
 
-# Project Overview
+---
 
-This project analyzes real-world Nordic electricity market behavior using Finland’s electricity pricing data from the ENTSO-E Transparency Platform. The platform performs:
+## 📌 Overview
 
-Electricity price trend analysis
-Market volatility detection
-Time-series analytics
-Machine learning-based forecasting
-Market behavior visualization
+Electricity markets are highly dynamic and influenced by:
 
-The system demonstrates how AI and data analytics can support electricity market forecasting and energy intelligence systems.
+* demand fluctuations,
+* renewable energy generation,
+* seasonal behavior,
+* consumption patterns.
 
-# Key Features
-Real Finland electricity market data analysis
-Day-ahead electricity price forecasting
-Time-series analytics and visualization
-Market volatility detection
-Hourly electricity price analysis
-Monthly and seasonal trend analysis
-Feature engineering for forecasting
-Machine learning model training and evaluation
-Interactive Streamlit dashboard
-Energy market insights generation
+This project analyzes Finland’s real-world day-ahead electricity market data and builds a forecasting pipeline capable of:
 
-# Technology Stack
-Programming & Analytics
-Python
-Pandas
-NumPy
-Visualization
-Matplotlib
-Plotly
-Streamlit
-Machine Learning
-Scikit-learn
-Random Forest Regressor
-XGBoost
-Dataset Source
-ENTSO-E Transparency Platform
-Development Environment
-Google Colab
+* detecting market trends,
+* predicting electricity prices,
+* identifying volatility spikes,
+* generating market intelligence insights.
 
-# Dataset Information
+The goal of this project is to demonstrate how AI and machine learning can support energy market analytics and forecasting systems.
 
-The dataset was collected from the ENTSO-E Transparency Platform and contains real Finland electricity market pricing data.
+---
 
-Dataset Includes:
-Timestamp
-Day-ahead electricity prices (EUR/MWh)
-Historical electricity market data
-High-frequency pricing intervals
+# 🚀 Features
 
-# Project Workflow
-1. Data Collection
+✅ Real Finland electricity market dataset
+✅ Electricity price forecasting using Machine Learning
+✅ Time-series energy market analysis
+✅ Electricity price trend visualization
+✅ Market volatility detection
+✅ Hourly pricing behavior analysis
+✅ Feature importance analysis
+✅ Interactive Streamlit dashboard
+✅ Energy analytics and forecasting insights
 
-Real Finland electricity market pricing data was downloaded from the ENTSO-E Transparency Platform.
+---
 
-2. Data Cleaning & Preprocessing
-Removed unnecessary columns
-Converted timestamps
-Processed electricity pricing data
-Handled missing values
+# 🧠 Machine Learning Pipeline
 
-3. Feature Engineering
-Generated time-based features:
+## Data Processing
 
-Hour
-Day
-Month
-Weekday
-Year
+* Timestamp conversion
+* Missing value handling
+* Feature engineering
+* Data cleaning
 
-4. Exploratory Data Analysis
-Performed:
-Electricity price trend analysis
-Hourly pricing pattern analysis
-Monthly market behavior analysis
-Market volatility analysis
+## Feature Engineering
 
-5. Machine Learning Forecasting
-Trained a Random Forest Regression model to forecast electricity prices using time-based features.
+The following features were generated:
 
-6. Model Evaluation
-Evaluated forecasting performance using:
-MAE
-MSE
-RMSE
-R² Score
+* Hour
+* Day
+* Month
+* Weekday
+* Year
 
-7. Volatility Detection
-Detected abnormal electricity price spikes and unstable market periods.
-Machine Learning Model
-Model Used
-Random Forest Regressor
-Input Features
-Hour
-Day
-Month
-Weekday
-Target Variable
-Electricity Price (EUR/MWh)
+## Forecasting Model
 
-# Project Visualizations
-Finland Electricity Prices Over Time
+* Random Forest Regressor
 
-Shows real Finland electricity market volatility and long-term price behavior.
+## Evaluation Metrics
 
-Actual vs Predicted Electricity Prices
+* MAE
+* MSE
+* RMSE
+* R² Score
 
-Compares actual electricity prices with machine learning-based forecasted prices.
+---
 
-Average Electricity Price by Hour
+# 📊 Project Visualizations
 
-Displays electricity market behavior and peak pricing hours across the day.
+## Finland Electricity Prices Over Time
 
-Feature Importance
+Real Finland electricity market behavior and volatility patterns across the year.
 
-Shows the contribution of different features in electricity price forecasting.
+![Finland Electricity Prices Over Time](images/Finland%20Electricity%20Prices%20Over%20Time.png)
 
-Streamlit Dashboard
+---
 
-The project includes an interactive Streamlit dashboard for:
+## Actual vs Predicted Electricity Prices
 
-Electricity market analytics
-Forecast visualization
-Market volatility monitoring
-Interactive filtering and insights
-Repository Structure
+Comparison between actual market prices and machine learning predictions.
+
+![Actual vs Predicted Electricity Prices](images/Actual%20vs%20Predicted%20Electricity%20Prices.png)
+
+---
+
+## Average Electricity Price by Hour
+
+Hourly electricity pricing behavior and peak demand periods.
+
+![Average Electricity Price by Hour](images/Average%20Electricity%20Price%20by%20Hour.png)
+
+---
+
+## Feature Importance
+
+Relative importance of features used in electricity price forecasting.
+
+![Feature Importance](images/Feature%20Importance.png)
+
+---
+
+# 🛠 Technology Stack
+
+## Programming
+
+* Python
+
+## Data Analytics
+
+* Pandas
+* NumPy
+
+## Visualization
+
+* Matplotlib
+* Plotly
+* Streamlit
+
+## Machine Learning
+
+* Scikit-learn
+* Random Forest Regressor
+* XGBoost
+
+## Dataset Source
+
+* ENTSO-E Transparency Platform
+
+---
+
+# 📂 Project Structure
+
+```text
 nordic-electricity-market-forecasting/
 │
 ├── data/
@@ -147,44 +153,90 @@ nordic-electricity-market-forecasting/
 ├── app.py
 ├── README.md
 ├── requirements.txt
-Installation & Setup
-Clone Repository
-git clone https://github.com/your-username/nordic-electricity-market-forecasting.git
-Install Dependencies
-pip install -r requirements.txt
-Run Streamlit Dashboard
+```
+
+---
+
+# 📈 Streamlit Dashboard
+
+The project includes an interactive Streamlit dashboard for:
+
+* electricity market analytics,
+* forecasting visualization,
+* market trend analysis,
+* volatility monitoring.
+
+Run the dashboard locally using:
+
+```bash
 streamlit run app.py
-Applications
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/nordic-electricity-market-forecasting.git
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 📊 Dataset Source
+
+The dataset was collected from the ENTSO-E Transparency Platform and includes:
+
+* Finland day-ahead electricity prices,
+* historical electricity market data,
+* high-frequency pricing intervals.
+
+---
+
+# 🔮 Future Improvements
+
+* LSTM-based deep learning forecasting
+* Real-time ENTSO-E API integration
+* Renewable energy impact analysis
+* Multi-country electricity market comparison
+* Advanced forecasting models
+* Live cloud deployment
+
+---
+
+# 🌍 Applications
 
 This project can be applied in:
 
-Electricity market analytics
-Smart grid systems
-Energy forecasting
-Energy trading analytics
-Renewable energy intelligence
-AI-driven energy systems
-Power systems research
-Future Improvements
-LSTM deep learning forecasting
-Real-time ENTSO-E API integration
-Renewable energy impact analysis
-Multi-country electricity market comparison
-Advanced forecasting models
-Live electricity market dashboard deployment
-Results
+* Electricity Market Analytics
+* Energy Forecasting
+* Smart Grid Systems
+* Renewable Energy Analytics
+* AI-driven Energy Intelligence
+* Power Systems Research
 
-The forecasting system successfully identified electricity market pricing behavior and generated predictive insights using real Finland electricity market data. The platform also detected high-volatility periods and analyzed electricity market trends across multiple time dimensions.
+---
 
-Author
+# 👨‍💻 Author
 
-M.Sabda Pyari
+**M. Sabda Pyari**
 B.Tech Electrical Engineering (Computer Science Specialization)
 Dayalbagh Educational Institute
 
-References
-ENTSO-E Transparency Platform
-Scikit-learn Documentation
-Pandas Documentation
-Streamlit Documentation
-Machine Learning for Energy Systems Research
+---
+
+# 📚 References
+
+* ENTSO-E Transparency Platform
+* Scikit-learn Documentation
+* Pandas Documentation
+* Streamlit Documentation
+
+Source draft adapted from uploaded README content. 
