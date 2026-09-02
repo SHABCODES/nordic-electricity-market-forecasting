@@ -1,0 +1,18 @@
+{
+  "best_model": "ridge",
+  "models_evaluated": [
+    "ridge",
+    "random_forest",
+    "lightgbm",
+    "xgboost"
+  ],
+  "best_metrics": {
+    "model": "ridge",
+    "mae": 4.4534,
+    "rmse": 7.7435,
+    "mape": 231.3,
+    "r2": 0.9687,
+    "directional_accuracy": 63.08,
+    "train_time_s": 0.03
+  }
+}

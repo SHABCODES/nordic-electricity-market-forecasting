@@ -1,0 +1,5 @@
+model,mae,rmse,mape,r2,directional_accuracy,train_time_s
+ridge,4.4534,7.7435,231.3,0.9687,63.08,0.03
+random_forest,4.0682,7.8544,29.3,0.9678,62.09,12.23
+lightgbm,4.3976,8.0975,61.12,0.9658,61.92,1.36
+xgboost,5.0957,8.8689,83.18,0.959,61.18,3.22
